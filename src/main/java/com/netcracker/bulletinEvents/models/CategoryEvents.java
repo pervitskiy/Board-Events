@@ -13,6 +13,7 @@ import java.util.Set;
 @DynamicUpdate
 @Table(name="categories")
 public class CategoryEvents {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "categories_id", unique = true, nullable = false)
