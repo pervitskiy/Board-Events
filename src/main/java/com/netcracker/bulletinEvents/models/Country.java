@@ -22,6 +22,6 @@ public class Country {
     @Column(name="country_name", nullable = false)
     private String countryName;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "county")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "country")
     private Set<City> cities;
 }

@@ -24,7 +24,7 @@ public class Media {
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "categories_file_categories_file_id", nullable = false)
-    private CategoryFile categoryFile;
+    private CategoryFile categoriesFile;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "users_user_id", nullable = true)

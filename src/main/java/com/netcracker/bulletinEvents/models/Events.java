@@ -39,7 +39,7 @@ public class Events {
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "cities_city_id", nullable = false)
-    private City city;
+    private City cities;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "eventsUser")
     private Set<User> users;
@@ -54,7 +54,7 @@ public class Events {
     private Set<Comments> comments;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "eventsPaymentInformation")
-    private Set<Comments> paymentInformation;
+    private Set<PaymentInformation> paymentInformation;
 
 
 

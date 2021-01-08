@@ -17,7 +17,7 @@ public class CategoryFile {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "categories_file_id", unique = true, nullable = false)
-    private Integer categotiesFileId;
+    private Integer categoriesFileId;
 
     @Column(name="categories_file_name", nullable = false)
     private String categoriesFileName;

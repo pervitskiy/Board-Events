@@ -41,7 +41,7 @@ public class User {
     private Set<Comments> userComments;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "userPaymentsInformation")
-    private Set<Comments> userPaymentsInformation;
+    private Set<PaymentInformation> userPaymentsInformation;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "events_event_id", nullable = true)

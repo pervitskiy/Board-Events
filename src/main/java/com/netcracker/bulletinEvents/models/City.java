@@ -19,14 +19,14 @@ public class City {
     @Column(name = "city_id", unique = true, nullable = false)
     private Integer cityID;
 
-    @Column(name="name", nullable = false)
+    @Column(name="city_name", nullable = false)
     private String cityName;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "country_country_id", nullable = true)
     private Country country;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "city")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "cities")
     private Set<Events> events;
 
 }

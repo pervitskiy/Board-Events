@@ -20,7 +20,7 @@ public class PaymentInformation {
     @Column(name = "payment_information_id", unique = true, nullable = false)
     private Integer PaymentInformationID;
 
-    @Column(name="DateTime", nullable = false)
+    @Column(name="datetime", nullable = false)
     private LocalDateTime dateTimePay;
 
     @Column(name="status", nullable = false)
@@ -32,5 +32,5 @@ public class PaymentInformation {
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "users_user_id", nullable = false)
-    private User userComments;
+    private User userPaymentsInformation;
 }
